@@ -2,6 +2,7 @@ package com.example.fureverdogapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
@@ -91,5 +92,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void logout(View view) {
+        Intent intent = new Intent(MainActivity.this, LoginOrRegistration.class);
+        startActivity(intent);
+        finish();
+        return;
     }
 }
