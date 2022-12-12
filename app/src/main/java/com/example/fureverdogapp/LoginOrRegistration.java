@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class LoginOrRegistration extends AppCompatActivity {
 
-    private Button mLogin,mRegister;
+    private Button mLogin,mRegister, mConTest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class LoginOrRegistration extends AppCompatActivity {
 
         mLogin = (Button) findViewById(R.id.login);
         mRegister = (Button) findViewById(R.id.register);
+        mConTest = (Button) findViewById(R.id.conTest);
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,16 @@ public class LoginOrRegistration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginOrRegistration.this, Registration.class);
+                startActivity(intent);
+                finish();
+                return;
+            }
+        });
+
+        mConTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginOrRegistration.this, ConnectionTest.class);
                 startActivity(intent);
                 finish();
                 return;
