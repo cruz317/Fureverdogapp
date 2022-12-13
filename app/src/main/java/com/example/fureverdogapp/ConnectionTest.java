@@ -42,7 +42,7 @@ public class ConnectionTest extends AppCompatActivity {
                 ResultSet rs = st.executeQuery(query);
 
                 while(rs.next())
-                    tx1.setText(rs.getString(0));
+                    tx1.setText(rs.getString("name"));
             }
             else
             {

@@ -15,12 +15,11 @@ public class ConnectionHelper {
         StrictMode.setThreadPolicy(policy);
 
         Connection connection = null;
-        String ConnectionURL = null;
 
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/furever_home", "root", "root");
+            connection = DriverManager.getConnection("jdbc:mysql://172.1.1.0:3306/furever_home", "root", "");
         }
         catch(Exception ex)
         {
