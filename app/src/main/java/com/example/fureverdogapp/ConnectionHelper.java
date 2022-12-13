@@ -20,7 +20,7 @@ public class ConnectionHelper {
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8080/furever_home", "root", "");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/furever_home", "root", "root");
         }
         catch(Exception ex)
         {
