@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/createPet_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="+"
+            android:textColor="@color/brown"
+            app:layout_constraintBottom_toTopOf="@+id/chooseImage_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/addPetText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/returnHome_button1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text=">"
+            android:textColor="@color/brown"
+            app:layout_constraintEnd_toStartOf="@+id/addPetText"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chooseImage_button"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Choose photo from gallery"
+        android:textColor="@color/brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/dogImage"
+        app:layout_constraintTop_toTopOf="@+id/dogProfileDescription" />
+
+    <TextView
+        android:id="@+id/addPetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Create a Dog Profile"
+        android:textColor="@color/brown"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/dogProfileDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <TextView
+        android:id="@+id/dogProfileDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Creating a dog profile puts your dog up for\nadoption and lets people in the area\ngive them a furever home."
+        android:textAlignment="center"
+        android:textColor="@color/light_brown"
+        android:textSize="6pt"
+        app:layout_constraintBottom_toTopOf="@+id/dogImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+            android:id="@+id/dogImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/returnHome_button1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/editTextDogName"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="e.g. Bob"
+        android:inputType="textPersonName"
+        android:textColor="@color/light_brown"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogNameText" />
+
+    <EditText
+        android:id="@+id/dogZipCodeTextEdit"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/gill_sans"
+        android:hint="e.g. 12345"
+        android:inputType="number"
+        android:textColor="@color/light_brown"
+        android:textSize="6pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogZipCodeText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dogZipCodeText"
+        android:layout_width="340dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Zip Code"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogBreedSpinner" />
+
+    <TextView
+        android:id="@+id/dogBreedText"
+        android:layout_width="340dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Breed"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
+
+    <Spinner
+        android:id="@+id/dogBreedSpinner"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/breed_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogBreedText" />
+
+    <TextView
+        android:id="@+id/genderDog"
+        android:layout_width="340dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Gender"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogAgeInput" />
+
+    <TextView
+        android:id="@+id/dogNameText"
+        android:layout_width="340dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Name"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImage_button" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/gender_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderDog" />
+
+    <TextView
+        android:id="@+id/dogAgeText"
+        android:layout_width="340dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Age"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDogName" />
+
+    <EditText
+        android:id="@+id/dogAgeInput"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/gill_sans"
+        android:hint="e.g. 5"
+        android:inputType="number"
+        android:textColor="@color/light_brown"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogAgeText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

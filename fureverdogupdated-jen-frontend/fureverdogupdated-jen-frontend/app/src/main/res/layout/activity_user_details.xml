@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/off_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/accountDetailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Account Details"
+        android:textColor="@color/brown"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/userAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <ImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/insertNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Name: "
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAvatar" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="77dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Username: "
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Email:"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/addressText"
+        app:layout_constraintEnd_toStartOf="@+id/insertEmailText"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Address: "
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/edit_button"
+        app:layout_constraintEnd_toStartOf="@+id/insertAddressText"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/return_button3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Return"
+        android:textColor="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/insertNameText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertNameText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/insertUsernameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toEndOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/insertUsernameText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertUsernameText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/insertEmailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/usernameText" />
+
+    <TextView
+        android:id="@+id/insertEmailText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertEmailText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/insertAddressText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/insertAddressText"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertAddressText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/edit_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Edit"
+        android:textColor="@color/brown"
+        app:layout_constraintBottom_toTopOf="@+id/return_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

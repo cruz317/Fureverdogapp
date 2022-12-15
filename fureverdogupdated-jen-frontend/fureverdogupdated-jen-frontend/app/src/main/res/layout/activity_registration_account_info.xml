@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white">
+
+    <TextView
+        android:id="@+id/createAccountIntroText"
+        android:layout_width="245dp"
+        android:layout_height="87dp"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Let's create your account!"
+        android:textSize="15pt"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/accountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans"
+        android:text="Creating an account will allow you to find other\ndogs to adopt in your area."
+        android:textColor="@color/brown"
+        android:textSize="6pt"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCreateUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountIntroText"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <EditText
+        android:id="@+id/editTextCreateUserName"
+        android:layout_width="337dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:fontFamily="@font/gill_sans"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="8pt"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCreatePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCreatePassword"
+        android:layout_width="337dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:fontFamily="@font/gill_sans"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="8pt"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCreateEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCreateEmail"
+        android:layout_width="337dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:fontFamily="@font/gill_sans"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="8pt"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Let's get started"
+        android:textSize="8pt"
+        android:textColor="@color/brown"
+        app:layout_constraintBottom_toTopOf="@+id/haveAccountText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/haveAccountText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Already have an account?"
+        android:textSize="8pt"
+        android:textColor="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/return_button2"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/return_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Return"
+        android:textColor="@color/brown"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_button"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

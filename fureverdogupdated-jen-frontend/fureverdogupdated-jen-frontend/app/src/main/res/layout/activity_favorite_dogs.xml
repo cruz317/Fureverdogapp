@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/app"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/off_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/insertDogNameText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertDogNameText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/insertDogAgeText"
+        app2:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/dogBreedText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Breed"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/shelterAddressText"
+        app2:layout_constraintEnd_toStartOf="@+id/insertDogBreedText"
+        app2:layout_constraintHorizontal_bias="0.208"
+        app2:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="169dp"
+        app:layout_editor_absoluteY="334dp" />
+
+    <TextView
+        android:id="@+id/shelterAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans"
+        android:text="Shelter address: "
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.079"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.681" />
+
+    <TextView
+        android:id="@+id/insertShelterAddressText"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="132dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertShelterAddressText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/userProfile_button1"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.578"
+        app2:layout_constraintStart_toEndOf="@+id/shelterAddressText" />
+
+    <TextView
+        android:id="@+id/dogNameText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans"
+        android:text="Name"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/dogAgeText3"
+        app2:layout_constraintEnd_toStartOf="@+id/insertDogNameText"
+        app2:layout_constraintHorizontal_bias="0.21"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app2:layout_constraintVertical_bias="0.797"
+        app:layout_editor_absoluteX="169dp"
+        app:layout_editor_absoluteY="283dp" />
+
+    <TextView
+        android:id="@+id/dogAgeText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Age"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/GenderDogText"
+        app2:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="165dp"
+        app:layout_editor_absoluteY="388dp" />
+
+    <TextView
+        android:id="@+id/insertDogBreedText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertDogBreedText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/insertShelterAddressText"
+        app2:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/insertDogAgeText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertDogAgeText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/insertDogGenderText"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.867"
+        app2:layout_constraintStart_toEndOf="@+id/dogAgeText3" />
+
+    <TextView
+        android:id="@+id/GenderDogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="Gender"
+        android:textColor="@color/brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/dogBreedText3"
+        app2:layout_constraintEnd_toStartOf="@+id/insertDogGenderText"
+        app2:layout_constraintHorizontal_bias="0.228"
+        app2:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="214dp"
+        app:layout_editor_absoluteY="477dp" />
+
+    <TextView
+        android:id="@+id/insertDogGenderText"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/gill_sans"
+        android:text="insertDogGenderText"
+        android:textColor="@color/light_brown"
+        android:textSize="7pt"
+        app2:layout_constraintBottom_toTopOf="@+id/insertDogBreedText"
+        app2:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/adopt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Adopt"
+        android:textColor="@color/brown"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.976"
+        app:layout_editor_absoluteX="161dp"
+        app:layout_editor_absoluteY="648dp" />
+
+    <Button
+        android:id="@+id/userProfile_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Profile"
+        android:textColor="@color/brown"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.724"
+        app2:layout_constraintStart_toEndOf="@+id/adopt_button"
+        app:layout_editor_absoluteX="286dp"
+        app:layout_editor_absoluteY="644dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.307"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.222"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/favoritesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Favorite Dogs"
+        android:textColor="@color/brown"
+        android:textSize="10pt"
+        app2:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.577"
+        app:layout_editor_absoluteX="41dp"
+        app:layout_editor_absoluteY="34dp" />
+
+    <Button
+        android:id="@+id/returnHome_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Home"
+        android:textColor="@color/brown"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toStartOf="@+id/adopt_button"
+        app2:layout_constraintHorizontal_bias="0.228"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.976"
+        app:layout_editor_absoluteX="41dp"
+        app:layout_editor_absoluteY="645dp" />
+
+    <Button
+        android:id="@+id/nextDog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gill_sans_bold"
+        android:text="Next"
+        android:textColor="@color/brown"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.222"
+        app2:layout_constraintStart_toEndOf="@+id/imageView2"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.253"
+        app:layout_editor_absoluteX="298dp"
+        app:layout_editor_absoluteY="156dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
