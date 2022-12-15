@@ -22,14 +22,14 @@
             android:value="" />
         </activity>
         <activity
-            android:name=".ConnectionTest"
+            android:name=".Registration"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Registration"
+            android:name=".dbTest"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

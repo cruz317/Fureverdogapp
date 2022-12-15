@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        DatabaseHandler databaseHandler = new DatabaseHandler(this);
 
         al = new ArrayList<>();
         al.add("Golden Retriever");
