@@ -13,11 +13,15 @@ public class Registration extends AppCompatActivity {
     private Button mRegister;
 
     private EditText mEmail, mPassword;
+
+    DatabaseHandler mDatabaseHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
+        mDatabaseHandler = new DatabaseHandler(this);
         mRegister = (Button) findViewById(R.id.register);
 
         mEmail = (EditText) findViewById(R.id.email);
@@ -29,6 +33,10 @@ public class Registration extends AppCompatActivity {
             //create users with this to DB
             @Override
             public void onClick(View v) {
+
+
+                mDatabaseHandler.addUser(email, password);
+
                 Intent intent = new Intent(Registration.this, MainActivity.class);
                 startActivity(intent);
                 finish();
